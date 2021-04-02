@@ -78,6 +78,7 @@ function SearchPage({movies = []}) {
               alt="movie images"
               style={searchPageStyles.image}
             />
+            <Text style={searchPageStyles.text}>{movie.title}</Text>
           </View>
         ))}
       </ScrollView>
@@ -87,6 +88,8 @@ function SearchPage({movies = []}) {
 
 const searchPageStyles = StyleSheet.create({
   container: {
+    flex: 1,
+    flexDirection: 'row',
     height: 100,
     marginTop: 1,
     borderWidth: 1,
@@ -101,6 +104,10 @@ const searchPageStyles = StyleSheet.create({
     height: 99,
     width: 150,
     borderRadius: 5,
+  },
+  text: {
+    color: 'white',
+    padding: 10,
   },
 });
 
