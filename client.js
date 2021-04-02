@@ -8,3 +8,9 @@ export async function getMoviesByPopulatrity(pageNumber) {
     `${baseUrl}/movie/popular?page=${pageNumber}&api_key=${api_key}`,
   );
 }
+
+export async function getMoviesViaInput(query) {
+  return await axios.get(
+    `${baseUrl}/search/movie?api_key=${api_key}&query=${query}`,
+  );
+}
