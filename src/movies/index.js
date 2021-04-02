@@ -70,7 +70,7 @@ function SearchPage({movies = []}) {
       />
       <ScrollView contentInsetAdjustmentBehavior="automatic">
         {moviesCopy.map(movie => (
-          <View style={searchPageStyles.container}>
+          <View style={searchPageStyles.container} key={movie.id}>
             <Image
               source={{
                 uri: `https://image.tmdb.org/t/p/w500/${movie.backdrop_path}`,
