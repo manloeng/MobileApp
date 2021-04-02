@@ -1,10 +1,10 @@
 import React from 'react';
-import {SafeAreaView, StatusBar} from 'react-native';
+import {StyleSheet, SafeAreaView, StatusBar} from 'react-native';
 import Movies from './src/movies';
 
 const App = () => {
   return (
-    <SafeAreaView>
+    <SafeAreaView style={styles.container}>
       <StatusBar />
       <Movies />
     </SafeAreaView>
@@ -12,3 +12,10 @@ const App = () => {
 };
 
 export default App;
+
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: 'black',
+    height: '100%',
+  },
+});
