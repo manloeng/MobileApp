@@ -108,7 +108,9 @@ const searchPageStyles = StyleSheet.create({
 function PopularMoviesList({movies = []}) {
   return (
     <>
-      <Text h4>Popular</Text>
+      <Text h4 style={popularMoviesListStyles.text}>
+        Popular
+      </Text>
       <ScrollView
         contentInsetAdjustmentBehavior="automatic"
         horizontal={true}
@@ -144,6 +146,9 @@ const popularMoviesListStyles = StyleSheet.create({
     width: 80,
     margin: 10,
     borderRadius: 5,
+  },
+  text: {
+    color: 'white',
   },
 });
 
