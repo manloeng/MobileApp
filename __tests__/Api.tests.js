@@ -16,6 +16,7 @@ describe('API Testsing', () => {
       expect(response.data.page).toEqual(2);
     });
 
+    // The backend should return the correct response
     it('Return a 400 Bad Request: when a invalid page number is entered', async () => {
       const response = await getMoviesByPopulatrity('Fail');
       expect(response.status).toEqual(400);
