@@ -7,7 +7,7 @@ import {Text, Header} from 'react-native-elements';
 import SearchPage from './searchPage';
 import PopularMoviesList from './popularMoviesList';
 
-const Movie = ({navigation}) => {
+const Movies = ({navigation}) => {
   const [movies, setMovies] = useState([]);
   const [isSearchOpen, setISearchOpen] = useState(false);
 
@@ -46,4 +46,4 @@ const pageStyles = StyleSheet.create({
   },
 });
 
-export default Movie;
+export default Movies;
