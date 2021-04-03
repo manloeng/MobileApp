@@ -7,6 +7,7 @@ module.exports = {
       '|react-native-size-matters' +
       '|react-native-ratings' +
       '|react-native-gesture-handler' +
+      '|@react-navigation' +
       '|react-navigation/native' +
       '|react-navigation/stack' +
       '|react-navigation-tabs' +
@@ -14,6 +15,7 @@ module.exports = {
       '|react-native-screens' +
       '|react-native-reanimated' +
       '|react-native-elements' +
+      '|react-native-iphone-x-helper' +
       ')/)',
   ],
 };
