@@ -6,6 +6,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 // import Stack from './src/router';
 
 import Movies from './src/components/movies';
+import Movie from './src/components/movies/movie';
 
 const Stack = createStackNavigator();
 const App = () => {
@@ -16,7 +17,8 @@ const App = () => {
           screenOptions={{
             headerShown: false,
           }}>
-          <Stack.Screen name="home" component={Movies} />
+          <Stack.Screen name="Home" component={Movies} />
+          <Stack.Screen name="Movies" component={Movie} />
         </Stack.Navigator>
       </NavigationContainer>
     </SafeAreaView>

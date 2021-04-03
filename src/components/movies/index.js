@@ -7,7 +7,7 @@ import {Text, Header} from 'react-native-elements';
 import SearchPage from './searchPage';
 import PopularMoviesList from './popularMoviesList';
 
-const Movie = () => {
+const Movie = ({navigation}) => {
   const [movies, setMovies] = useState([]);
   const [isSearchOpen, setISearchOpen] = useState(false);
 
@@ -30,9 +30,11 @@ const Movie = () => {
           </Text>
         }
       />
-      {isSearchOpen && <SearchPage movies={movies} />}
+      {isSearchOpen && <SearchPage movies={movies} navigation={navigation} />}
 
-      {!isSearchOpen && <PopularMoviesList movies={movies} />}
+      {!isSearchOpen && (
+        <PopularMoviesList movies={movies} navigation={navigation} />
+      )}
     </View>
   );
 };

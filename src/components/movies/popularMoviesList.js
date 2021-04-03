@@ -1,9 +1,9 @@
 import React from 'react';
-import {StyleSheet, ScrollView} from 'react-native';
+import {StyleSheet, ScrollView, TouchableOpacity} from 'react-native';
 import {Text, Image} from 'react-native-elements';
 
 // PopularMoviesList Component
-function PopularMoviesList({movies = []}) {
+function PopularMoviesList({movies = [], navigation}) {
   return (
     <>
       <Text h4 style={popularMoviesListStyles.text}>
@@ -16,14 +16,17 @@ function PopularMoviesList({movies = []}) {
         keyboardShouldPersistTaps="always"
         contentContainerStyle={popularMoviesListStyles.scrollViewContainer}>
         {movies.map(movie => (
-          <Image
+          <TouchableOpacity
             key={movie.id}
-            source={{
-              uri: `https://image.tmdb.org/t/p/w500/${movie.poster_path}`,
-            }}
-            alt="movie images"
-            style={popularMoviesListStyles.image}
-          />
+            onPress={() => navigation.navigate('Movies', {movie, movies})}>
+            <Image
+              source={{
+                uri: `https://image.tmdb.org/t/p/w500/${movie.poster_path}`,
+              }}
+              alt="movie images"
+              style={popularMoviesListStyles.image}
+            />
+          </TouchableOpacity>
         ))}
       </ScrollView>
     </>
