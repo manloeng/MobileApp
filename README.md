@@ -18,9 +18,7 @@ Please follow the react native guide to help setup your enviornment:
 
 https://reactnative.dev/docs/environment-setup
 
-```
-React Native Cli QuickStart
-```
+Following the React Native Cli QuickStart guide
 
 ## Step 1 - Setting up your own repository
 
