@@ -85,7 +85,13 @@ npx react-native run-android
 
 Once you have started the app, you will be taken straight to the app.
 
-** Currently Only the discover route is available **
+# Testing the App
+
+If you would like to test the app you can run:
+
+```
+yarn test
+```
 
 # Todo List
 
