@@ -19,7 +19,7 @@ const Movie = () => {
     fetchData();
   }, []);
   return (
-    <View>
+    <View style={pageStyles.container}>
       <Header
         centerComponent={{text: 'TMDB', style: {color: '#fff'}}}
         rightComponent={
@@ -34,6 +34,13 @@ const Movie = () => {
     </View>
   );
 };
+
+const pageStyles = StyleSheet.create({
+  container: {
+    backgroundColor: 'black',
+    height: '100%',
+  },
+});
 
 // SearchPage Component
 function SearchPage({movies = []}) {
