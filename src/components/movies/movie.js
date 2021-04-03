@@ -4,7 +4,7 @@ import {StyleSheet, ScrollView, View, Image} from 'react-native';
 import {Header, Text} from 'react-native-elements';
 import SearchPage from './searchPage';
 
-const Movie = ({route}) => {
+const Movie = ({navigation, route}) => {
   const {
     params: {movie, movies},
   } = route;
@@ -13,6 +13,7 @@ const Movie = ({route}) => {
   return (
     <>
       <Header
+        leftComponent={<Text onPress={() => navigation.goBack()}>Back</Text>}
         centerComponent={{text: 'TMDB', style: {color: '#fff'}}}
         rightComponent={
           <Text onPress={() => setISearchOpen(!isSearchOpen)}>
