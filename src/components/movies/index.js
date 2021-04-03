@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {StyleSheet, View} from 'react-native';
 
-import {getMoviesByPopulatrity} from '../../client';
+import {getMoviesByPopulatrity} from '../../../client';
 
 import {Text, Header} from 'react-native-elements';
 import SearchPage from './searchPage';

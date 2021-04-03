@@ -1,7 +1,7 @@
 import React, {useState, useEffect, useCallback} from 'react';
 import {StyleSheet, View, ScrollView} from 'react-native';
 
-import {getMoviesViaInput} from '../../client';
+import {getMoviesViaInput} from '../../../client';
 import {debounce} from 'lodash';
 
 import {Text, SearchBar, Image} from 'react-native-elements';

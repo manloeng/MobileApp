@@ -5,7 +5,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 // import Stack from './src/router';
 
-import Movies from './src/movies';
+import Movies from './src/components/movies';
 
 const Stack = createStackNavigator();
 const App = () => {
